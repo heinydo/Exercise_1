@@ -9,7 +9,7 @@
         android:id="@+id/BMI_Calculator"
         android:name="com.example.exercise_1.screens.calculator.BMICalculator"
         android:label="fragment_bmi__calculator"
-        tools:layout="@layout/fragment_bmi__calculator" >
+        tools:layout="@layout/fragment_bmi__calculate" >
         <action
             android:id="@+id/action_BMI_Calculator_to_BMIGoodResult"
             app:destination="@id/BMIGoodResult" />
@@ -21,5 +21,8 @@
         <action
             android:id="@+id/action_BMIGoodResult_to_BMI_Calculator"
             app:destination="@id/BMI_Calculator" />
+        <argument
+            android:name="bmiResult"
+            app:argType="integer" />
     </fragment>
 </navigation>
