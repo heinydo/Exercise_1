@@ -18,6 +18,11 @@ class BMIBadResult : Fragment() {
         var binding: FragmentBmiBadResultBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_bmi_bad_result, container, false)
 
+        val args = BMIGoodResultArgs.fromBundle(arguments!!)
+        val result = args.bmiResult.toString()
+
+        binding.badResultBmiAusgabe.text = result
+
         binding.goBackFromBadButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_BMIBadResult_to_BMI_Calculator)
         )

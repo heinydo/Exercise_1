@@ -29,9 +29,22 @@ class BMICalculator : Fragment() {
 
         binding.calculateButton.setOnClickListener {view : View ->
             val weightInput : String = binding.weightInput.text.toString()
-            val heihgtInput : String = binding.heightInput.text.toString()
-            var bmi =  viewModel.onCalculate(weightInput.toDouble(), heihgtInput.toDouble())
-            view.findNavController().navigate(BMICalculatorDirections.actionBMICalculatorToBMIGoodResult(bmi))
+            val heightInput : String = binding.heightInput.text.toString()
+            var bmi =  viewModel.onCalculate(weightInput.toDouble(), heightInput.toDouble())
+
+            // nur zum testen, dass es eingetragen wird.
+            view.findNavController().navigate(BMICalculatorDirections.actionBMICalculatorToBMIBadResult(bmi))
+
+            /*
+            if(16 < bmi < 24 ) {
+                // wenn bmi = good Result
+                view.findNavController().navigate(BMICalculatorDirections.actionBMICalculatorToBMIGoodResult(bmi))
+            } else {
+                // wenn bmi = bad result
+                view.findNavController().navigate(BMICalculatorDirections.actionBMICalculatorToBMIBadResult(bmi))
+            }
+            */
+
 
         }
         return binding.root
