@@ -7,20 +7,19 @@
 
     <fragment
         android:id="@+id/BMI_Calculator"
-        android:name="com.example.exercise_1.screens.BMICalculator"
+        android:name="com.example.exercise_1.screens.calculator.BMICalculator"
         android:label="fragment_bmi__calculator"
         tools:layout="@layout/fragment_bmi__calculator" >
         <action
-            android:id="@+id/action_BMI_Calculator_to_BMI_Result"
-            app:destination="@id/BMI_Result" />
+            android:id="@+id/action_BMI_Calculator_to_BMIGoodResult"
+            app:destination="@id/BMIGoodResult" />
     </fragment>
     <fragment
-        android:id="@+id/BMI_Result"
-        android:name="com.example.exercise_1.screens.BMIResult"
-        android:label="fragment_bmi__result"
-        tools:layout="@layout/fragment_bmi__result" >
+        android:id="@+id/BMIGoodResult"
+        android:name="com.example.exercise_1.screens.result.BMIGoodResult"
+        android:label="BMIGoodResult" >
         <action
-            android:id="@+id/action_BMI_Result_to_BMI_Calculator"
+            android:id="@+id/action_BMIGoodResult_to_BMI_Calculator"
             app:destination="@id/BMI_Calculator" />
     </fragment>
 </navigation>

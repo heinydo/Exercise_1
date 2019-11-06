@@ -1,4 +1,4 @@
-package com.example.exercise_1.screens
+package com.example.exercise_1.screens.calculator
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,9 +19,8 @@ class BMICalculator : Fragment() {
             inflater, R.layout.fragment_bmi__calculator, container,  false)
 
         binding.calculateButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_BMI_Calculator_to_BMI_Result)
+            Navigation.createNavigateOnClickListener(R.id.action_BMI_Calculator_to_BMIGoodResult)
         )
-
         return binding.root
     }
 }
