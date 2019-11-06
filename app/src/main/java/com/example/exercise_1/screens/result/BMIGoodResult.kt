@@ -8,20 +8,23 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import com.example.exercise_1.R
-import com.example.exercise_1.databinding.FragmentBmiGoodResultBinding
+import com.example.exercise_1.databinding.FragmentBmiGoodResultsBinding
 
 
 class BMIGoodResult : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
-        var binding: FragmentBmiGoodResultBinding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_bmi_good_result, container, false)
+        var binding: FragmentBmiGoodResultsBinding = DataBindingUtil.inflate(
+            inflater, R.layout.fragment_bmi_good_results, container,  false)
+
+        val args = BMIGoodResultArgs.fromBundle(arguments!!)
+        val result = args.bmiResult
 
         binding.goBackFromGoodButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_BMIGoodResult_to_BMI_Calculator)
         )
-        // Inflate the layout for this fragment
+
         return binding.root
+        }
     }
-}

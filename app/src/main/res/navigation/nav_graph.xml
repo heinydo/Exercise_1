@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_BMIGoodResult_to_BMI_Calculator"
             app:destination="@id/BMI_Calculator" />
+        <argument
+            android:name="bmiResult"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/BMIBadResult"
@@ -32,5 +35,8 @@
         <action
             android:id="@+id/action_BMIBadResult_to_BMI_Calculator"
             app:destination="@id/BMI_Calculator" />
+        <argument
+            android:name="bmiResult"
+            app:argType="integer" />
     </fragment>
 </navigation>

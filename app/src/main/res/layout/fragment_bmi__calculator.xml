@@ -13,7 +13,7 @@
         android:paddingTop="20dp"
         android:paddingRight="20dp"
         android:paddingBottom="20dp"
-        tools:context=".screens.BmiFragment">
+        tools:context=".screens.calculator.BMICalculator">
 
         <EditText
             android:id="@+id/heightInput"
