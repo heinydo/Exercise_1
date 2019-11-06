@@ -8,4 +8,12 @@
     <string name="titelText">Berechne deinen BMI</string>
     <string name="groeßeText">Gib deine Größe ein</string>
     <string name="gewichtText">Gib dein Gewicht ein</string>
+    <string name="bg_color_good">bg_color</string>
+    <string name="good_result_header">Dein BMI beträgt:</string>
+    <string name="bmi_ausgabe">bmi_ausgabe_hier_reinmachen</string>
+    <string name="good_result_add_message">Perfektes Körpergewicht!</string>
+    <string name="go_back_button">Erneut Berechnen</string>
+    <string name="bad_result_background">bg_color</string>
+    <string name="bad_result_add_message">VIel zu viel Körpergewicht!!!</string>
+    <string name="go_back_from_bad_button">Erneut Berechnen!</string>
 </resources>

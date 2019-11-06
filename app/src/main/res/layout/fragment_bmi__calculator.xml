@@ -19,12 +19,11 @@
             android:id="@+id/heightInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:ems="10"
             android:hint="@string/groeßeText"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/titelText" />
 
@@ -56,13 +55,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
             android:text="@string/calculate"
+            android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weightInput"
-            android:background="@android:color/holo_green_light"
-            android:textColor="@android:color/white"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/weightInput" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
