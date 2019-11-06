@@ -19,7 +19,9 @@ class BMIGoodResult : Fragment() {
             inflater, R.layout.fragment_bmi_good_result, container,  false)
 
         val args = BMIGoodResultArgs.fromBundle(arguments!!)
-        val result = args.bmiResult
+        val result = args.bmiResult.toString()
+
+        binding.goodResultBmiAusgabe.text = result
 
         binding.goBackFromGoodButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_BMIGoodResult_to_BMI_Calculator)
