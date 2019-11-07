@@ -12,4 +12,4 @@ Wir haben uns für das Pattern **MVVM** entschieden.  MVVM kombiniert die Vortei
 
 ### APP-Konzept
 
-Auf dem Start-Screen hat der User die Möglichkeit Größe und Gewicht einzugeben. Beim drücken des Buttons wird der BMI-Berechnet. Je nach Ergebenis, navigiert die Anwendung auf den Screen mit dem passenden Ergebenis. 
+Auf dem Start-Screen hat der User die Möglichkeit Größe und Gewicht einzugeben. Beim drücken des Buttons wird der BMI-Berechnet. Der ausgerechnete BMI wird zusammen mit einer Interpretation des Wertes im Folgescreen dargestellt. Dabei erhält der Nutzer ein farblich untermaltes Feedback.
