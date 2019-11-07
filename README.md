@@ -6,10 +6,15 @@
 
 ## App: BMI Rechner 
 
-Wir haben uns für das Pattern **MVVM** entschieden.  MVVM kombiniert die Vorteile der Trennung der von MVP bereitgestellten Anliegen mit den Vorteilen der Datenanbindung.  Es wurde dabei Views/ ViewController & ViewModels implementiert. Zukünftig können  Models in Form einer Datenbank (Datenmodell) eingeführt werden.  
+Wir haben uns für das Pattern **MVVM** entschieden.  MVVM kombiniert die Vorteile der Trennung der von MVP bereitgestellten Anliegen mit den Vorteilen der Datenanbindung.  Es wurde dabei Views/ ViewController & ViewModels implementiert. Zukünftig können  Models in Form einer Datenbank (Datenmodell) eingeführt werden. Dies war für die Implementierung des BMI-Rechners allerdings nicht von Nöten.  
 
+Die App wurde lediglich im Emulator getestet, da uns erst ab Anfang nächster Woche (KW46) ein Android Gerät zur Verfügung stehen wird. 
 
 
 ### APP-Konzept
 
 Auf dem Start-Screen hat der User die Möglichkeit Größe und Gewicht einzugeben. Beim drücken des Buttons wird der BMI-Berechnet. Der ausgerechnete BMI wird zusammen mit einer Interpretation des Wertes im Folgescreen dargestellt. Dabei erhält der Nutzer ein farblich untermaltes Feedback.
+
+
+### APP-Architektur
+
