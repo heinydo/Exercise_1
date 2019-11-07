@@ -40,6 +40,9 @@ class BMICalculator : Fragment() {
             var bmi =  viewModel.onCalculate(weightInput.toDouble(), heihgtInput.toDouble())
 
                 when (bmi) {
+                    in 0..18 -> {
+                        view.findNavController().navigate(BMICalculatorDirections.actionBMICalculatorToBMILessBadResult(bmi))
+                    }
                     in 19..24 -> {
                         view.findNavController().navigate(BMICalculatorDirections.actionBMICalculatorToBMIGoodResult(bmi))
                     }

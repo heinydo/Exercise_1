@@ -16,4 +16,5 @@
     <string name="bad_result_background">bg_color</string>
     <string name="bad_result_add_message">VIel zu viel Körpergewicht!!!</string>
     <string name="go_back_from_bad_button">Erneut Berechnen!</string>
+    <string name="less_bad_add_message">Zu wenig Körpergewicht!</string>
 </resources>
