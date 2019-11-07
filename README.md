@@ -18,5 +18,9 @@ Auf dem Start-Screen hat der User die Möglichkeit Größe und Gewicht einzugebe
 
 ### APP-Architektur
 
-Die View besteht aus den einzelnen Screens (Calculator & good, bad, less bad Result), die als Fragmente umgesetzt sind. Hierfür wird jeweils eine XML-Datei und eine zugehörige Kotlin Klasse implementiert. 
-Das ViewModel wurde für den Calculator-Screen implementiert. Hier wird die Berechnung des BMIs vorgenommen und je nach Ergebnis, der entsprechende Result-Screen aufgerufen. 
+Die View besteht aus den einzelnen Screens (Calculator & good, bad, less bad Result), die als Fragmente umgesetzt sind. Hierfür wird jeweils eine XML-Datei und eine zugehörige Kotlin Klasse implementiert.  
+
+Das ViewModel wurde für den Calculator-Screen implementiert. Hier wird die Berechnung des BMIs vorgenommen und je nach Ergebnis, der entsprechende Result-Screen aufgerufen.   
+
+Ein Model kann im weiteren Entwicklungsprozess einfach hinzugefügt werden, war aber für den aktuellen Stand der App nicht von Nöten.
+
