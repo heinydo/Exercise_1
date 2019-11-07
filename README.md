@@ -1,10 +1,15 @@
-# Exercise_1
-Mobile Computing WS 2019 - Exercise 1
+# Exercise 1 - Mobile Computing WS 2019
+| Name          | Matrikelnummer | Kurs   |
+| ------------- | -------------- | ------ |
+| Dominik Heiny | 300149         | MSI SE |
+| Philip Ebner  | 300453         | MSI SE |
+
+## App: BMI Rechner 
+
+Wir haben uns für das Pattern **MVVM** entschieden.  MVVM kombiniert die Vorteile der Trennung der von MVP bereitgestellten Anliegen mit den Vorteilen der Datenanbindung.  Es wurde dabei Views/ ViewController & ViewModels implementiert. Zukünftig können  Models in Form einer Datenbank (Datenmodell) eingeführt werden.  
 
 
-Name          | Student number | Course 
 
-Dominik Heiny | 300149         | MSI SE 
+### APP-Konzept
 
-Philip Ebner  | 300453         | MSI SE
-
+Auf dem Start-Screen hat der User die Möglichkeit Größe und Gewicht einzugeben. Beim drücken des Buttons wird der BMI-Berechnet. Je nach Ergebenis, navigiert die Anwendung auf den Screen mit dem passenden Ergebenis. 
